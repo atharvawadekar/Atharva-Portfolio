@@ -1,0 +1,137 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 210 20% 98%;
+    --foreground: 215 25% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 215 25% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 25% 15%;
+
+    --primary: 195 85% 45%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 180 65% 55%;
+    --secondary-foreground: 215 25% 15%;
+
+    --muted: 210 20% 95%;
+    --muted-foreground: 215 16% 45%;
+
+    --accent: 195 75% 92%;
+    --accent-foreground: 195 85% 35%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 215 20% 88%;
+    --input: 215 20% 88%;
+    --ring: 195 85% 45%;
+
+    --radius: 0.75rem;
+
+    /* Custom portfolio tokens */
+    --hero-gradient-from: 195 85% 45%;
+    --hero-gradient-to: 180 75% 55%;
+    --section-bg: 0 0% 100%;
+    --section-bg-alt: 210 25% 97%;
+    
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --shadow-soft: 0 4px 20px -4px hsl(215 25% 15% / 0.08);
+    --shadow-medium: 0 8px 30px -6px hsl(215 25% 15% / 0.12);
+    --shadow-glow: 0 0 40px hsl(195 85% 45% / 0.15);
+  }
+
+  .dark {
+    --background: 215 28% 10%;
+    --foreground: 210 20% 98%;
+
+    --card: 215 25% 12%;
+    --card-foreground: 210 20% 98%;
+
+    --popover: 215 25% 12%;
+    --popover-foreground: 210 20% 98%;
+
+    --primary: 195 85% 55%;
+    --primary-foreground: 215 28% 10%;
+
+    --secondary: 180 65% 45%;
+    --secondary-foreground: 210 20% 98%;
+
+    --muted: 215 25% 16%;
+    --muted-foreground: 215 16% 65%;
+
+    --accent: 195 75% 20%;
+    --accent-foreground: 195 85% 85%;
+
+    --destructive: 0 62.8% 50%;
+    --destructive-foreground: 210 20% 98%;
+
+    --border: 215 20% 20%;
+    --input: 215 20% 20%;
+    --ring: 195 85% 55%;
+
+    /* Custom portfolio tokens - dark */
+    --hero-gradient-from: 195 85% 55%;
+    --hero-gradient-to: 180 75% 50%;
+    --section-bg: 215 25% 12%;
+    --section-bg-alt: 215 28% 10%;
+    
+    --shadow-soft: 0 4px 20px -4px hsl(0 0% 0% / 0.3);
+    --shadow-medium: 0 8px 30px -6px hsl(0 0% 0% / 0.4);
+    --shadow-glow: 0 0 40px hsl(195 85% 55% / 0.2);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .gradient-hero {
+    background: linear-gradient(135deg, hsl(var(--hero-gradient-from)), hsl(var(--hero-gradient-to)));
+  }
+
+  .section-bg {
+    background-color: hsl(var(--section-bg));
+  }
+
+  .section-bg-alt {
+    background-color: hsl(var(--section-bg-alt));
+  }
+
+  .shadow-soft {
+    box-shadow: var(--shadow-soft);
+  }
+
+  .shadow-medium {
+    box-shadow: var(--shadow-medium);
+  }
+
+  .shadow-glow {
+    box-shadow: var(--shadow-glow);
+  }
+
+  .transition-smooth {
+    transition: var(--transition-smooth);
+  }
+}

@@ -34,7 +34,7 @@ const About = () => {
               <div className="text-sm text-muted-foreground">Projects</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold text-primary mb-2">3+</div>
+              <div className="text-4xl font-bold text-primary mb-2">2</div>
               <div className="text-sm text-muted-foreground">Internships</div>
             </div>
             <div className="text-center">

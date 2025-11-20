@@ -2,7 +2,7 @@ import { Briefcase, Calendar } from "lucide-react";
 
 const experiences = [
   {
-    title: "Machine Learning Intern",
+    title: "Machine Learning Intern (vis CSE611)",
     company: "Filmic Technologies",
     location: "Buffalo, NY",
     period: "Aug 2025 - Present",

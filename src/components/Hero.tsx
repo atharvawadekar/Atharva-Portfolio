@@ -22,10 +22,6 @@ const Hero = () => {
               <Mail className="mr-2 h-5 w-5" />
               <a href="mailto:wadekar@buffalo.edu">Contact Me</a>
             </Button>
-            <Button size="lg" variant="outline" className="bg-transparent border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary">
-              <FileDown className="mr-2 h-5 w-5" />
-              Download Resume
-            </Button>
           </div>
           <div className="flex gap-4 justify-center">
             <a 

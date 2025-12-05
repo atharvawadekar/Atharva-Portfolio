@@ -2,14 +2,14 @@ import { Briefcase, Calendar } from "lucide-react";
 
 const experiences = [
   {
-    title: "Machine Learning Intern (vis CSE611)",
+    title: "AI Engineer Intern (vis CSE611)",
     company: "Filmic Technologies",
     location: "Buffalo, NY",
     period: "Aug 2025 - Present",
     description: [
-      "Replaced hours-long manual reel inspection with a Snakemake pipeline that generates automated reports, cutting human review time by 80%+",
-      "Developed PyTorch models for frame detection and integrated Synchformer-based AV-sync alignment",
-      "Built React/TypeScript dashboard with Node.js/Express backend for pipeline management"
+      "Automated reel inspection using a Snakemake pipeline, cutting human review time by 80% per reel.",
+      "Engineered PyTorch models for frame and sprocket-hole detection, achieving 94% accuracy and facilitating more precise defect localization for downstream restoration and triage processes, improving efficiency.",
+      "Built a secure Node.js/Express backend and a React/TypeScript dashboard that eliminated CLI-based review and increased archivist throughput by 60% through faster filtering, browsing, and inspection of reel reports."
     ]
   },
   {
@@ -24,25 +24,25 @@ const experiences = [
     ]
   },
   {
-    title: "Full Stack Software Developer",
+    title: "Full Software Developer",
     company: "SportZilla",
     location: "Pune, India",
     period: "Oct 2023 - Jul 2024",
     description: [
-      "Integrated scalable payment processing module, reducing accountants' workload by 70% and boosting sales by 40%",
-      "Developed Bib Expo Management Software, reducing wait times by 60%",
-      "Automated participant e-certificate generation pipeline, reducing creation time by 95%"
+      "Integrated scalable payment processing module into event application enabling seamless handling of add-on items and automated sales reporting, reducing accountants’ workload by 70% and boosting sales by 40%.",
+      "Developed and deployed Bib Expo Management Software streamlining participant check-ins, reducing wait times by 60%.",
+      "Automated participant e-certificate generation by developing a graphical tool for dynamic variable placement on templates, reducing creation time by 95% and increasing user satisfaction by 60%."
     ]
   },
   {
-    title: "Management Trainee (Technology)",
+    title: "Software Developer",
     company: "NCDEX E-Markets",
     location: "Mumbai, India",
     period: "Jul 2022 - Sep 2023",
     description: [
-      "Created and maintained AWS infrastructure (EC2, RDS, S3, EBS) with security policies",
-      "Automated error detection pipeline, reducing issue resolution time from 90 to 7 minutes",
-      "Developed self-service campaign management dashboard for bulk communications"
+      "Architected cost-efficient AWS infrastructure (EC2, RDS, S3/Glacier), lowering cloud expenses by 35% and boosting profitability through optimized resource provisioning and secure system design.",
+      "Built an automated error detection and reporting pipeline that cut issue resolution time from 90 to 7 minutes by sending realtime alerts to the right teams, earning a Spot Award for impact.",
+      "Built a self-service campaign dashboard using the Brevo API, increasing customer outreach speed by 300% with analytics."
     ]
   }
 ];
@@ -56,8 +56,8 @@ const Experience = () => {
         </h2>
         <div className="max-w-4xl mx-auto space-y-8">
           {experiences.map((exp, index) => (
-            <div 
-              key={index} 
+            <div
+              key={index}
               className="bg-card p-6 rounded-xl shadow-soft hover:shadow-medium transition-smooth border border-border"
             >
               <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">

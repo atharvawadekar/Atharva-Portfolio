@@ -43,7 +43,7 @@ const Education = () => {
                 <h4 className="font-semibold mb-2 text-card-foreground">Relevant Coursework:</h4>
                 <div className="flex flex-wrap gap-2">
                   {[
-                    "Analysis of Algorithms",
+                    "Data structures and algorithms",
                     "Operating Systems",
                     "Machine Learning",
                     "Deep Learning",
@@ -92,11 +92,12 @@ const Education = () => {
                 <h4 className="font-semibold mb-2 text-card-foreground">Relevant Coursework:</h4>
                 <div className="flex flex-wrap gap-2">
                   {[
-                    "Data Structures and Algorithms",
-                    "Applied Machine Learning and Computer Vision",
+                    "Python Programming",
+                    "Linux System Administration",
+                    "C++ programming",
+                    "Digital Signal Processing",
                     "Object Oriented Programming",
-                    "Systems Design",
-                    "Operating Systems"
+                    "System Design Principles"
                   ].map((course) => (
                     <span
                       key={course}

@@ -1,9 +1,23 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import { ExternalLink } from "lucide-react";
 
 const projects = [
   {
-    title: "Bib-Findr: Event Photo Search Platform",
+    title: "Application Manager",
+    description: "Developed a responsive job application management tool that reduced manual tracking time by 60% for 10+ pilot users through automated form entry, centralized records, and instant updates.",
+    tech: ["Google Identity Services", "Google Sheets API", "OAuth", "Serverless"],
+    highlights: [
+      "Integrated Google Identity Services (OAuth) for secure, passwordless login",
+      "Serverless backend using Google Sheets API for reliable cloud-based CRUD operations",
+      "Seamless, cross-device data persistence validated across multiple user sessions"
+    ],
+    date: "Dec 2025",
+    link: "https://applicationmanager.netlify.app/"
+  },
+  {
+    title: "Frame-Findr: Event Photo Search Platform",
     description: "Full-stack web application with React/TypeScript frontend and Node.js/Express REST API backend using Google Cloud Vision API for automated OCR processing.",
     tech: ["React", "TypeScript", "Node.js", "MySQL", "Google Cloud", "Nginx"],
     highlights: [
@@ -11,7 +25,8 @@ const projects = [
       "Serving 10+ marathon events",
       "93% deployment time reduction with CI/CD automation"
     ],
-    date: "Nov 2025"
+    date: "Nov 2025",
+    link: "https://framefindr.com/"
   },
   {
     title: "Face Sketch-to-Photo Generation (Pix2Pix)",
@@ -66,7 +81,8 @@ const projects = [
       "Deployed on GoDaddy VPS with Ubuntu",
       "Stable performance under concurrent sessions"
     ],
-    date: "Dec 2024"
+    date: "Dec 2024",
+    link: "http://68.178.169.207:3001/"
   }
 ];
 
@@ -85,6 +101,18 @@ const Projects = () => {
                   <CardTitle className="text-xl group-hover:text-primary transition-smooth">
                     {project.title}
                   </CardTitle>
+                  {project.link && (
+                    <Button
+                      variant="ghost"
+                      size="icon"
+                      className="h-8 w-8 -mr-2 text-muted-foreground hover:text-primary"
+                      asChild
+                    >
+                      <a href={project.link} target="_blank" rel="noopener noreferrer">
+                        <ExternalLink className="h-4 w-4" />
+                      </a>
+                    </Button>
+                  )}
                 </div>
                 <CardDescription className="text-sm text-muted-foreground">{project.date}</CardDescription>
               </CardHeader>

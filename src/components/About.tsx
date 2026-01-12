@@ -8,13 +8,16 @@ const About = () => {
           </h2>
           <div className="bg-card p-8 rounded-2xl shadow-medium">
             <p className="text-lg text-card-foreground leading-relaxed mb-6">
-              I’m a Computer Science graduate student at the University at Buffalo (GPA 3.95) with a passion for applying machine learning, deep learning, and computer vision to real-world problems. I enjoy building intelligent systems that blend strong engineering fundamentals with practical impact.
+              I recently completed my Master’s in Computer Science from UB and have hands-on experience building, deploying, and maintaining production applications. One of my key projects is <a href="https://framefindr.com/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">FrameFindr</a>, an AI-driven web application for tagging photos from marathon events. I built the system end-to-end, including backend services, REST APIs, frontend, cloud deployment, hosting, domain setup, and monitoring. The platform uses Google Cloud Vision OCR to process large volumes of images and is currently live with organizers, with an upcoming event on January 25th.
             </p>
             <p className="text-lg text-card-foreground leading-relaxed mb-6">
-              Currently, at Filmic Technologies, I’m developing automated computer-vision pipelines that cut manual inspection time by over 80%. Outside this role, I’ve built full-stack applications like FrameFindr, a scalable photo-matching and OCR platform, and Application Tracker, a secure tool used for managing job applications. These projects strengthened my skills in PyTorch, React, Node.js, backend design, and cloud technologies.
+              I also worked as an AI Engineer Intern at Filmic, where I helped automate the manual inspection of film reels by building computer vision pipelines and backend dashboards. This replaced manual workflows and significantly reduced inspection and review time while maintaining reliability and performance.
+            </p>
+            <p className="text-lg text-card-foreground leading-relaxed mb-6">
+              Through these experiences, I’ve developed a strong foundation in full-stack development, scalable system design, API development, and DevOps practices. I enjoy working in collaborative teams, writing clear documentation, and solving problems in fast-moving environments.
             </p>
             <p className="text-lg text-card-foreground leading-relaxed">
-              I’m seeking full-time opportunities starting January 2026, where I can contribute to impactful, innovative engineering challenges while continuing to grow as an AI/ML and software engineer.
+              I’m currently seeking full-time opportunities starting January 2026, where I can contribute to impactful, innovative engineering challenges while continuing to grow as an AI/ML and software engineer.
             </p>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-12">

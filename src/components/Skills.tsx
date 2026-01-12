@@ -3,35 +3,31 @@ import { Badge } from "@/components/ui/badge";
 const skillCategories = [
   {
     category: "Programming Languages",
-    skills: ["Python", "JavaScript", "TypeScript", "C++", "Java", "SQL"]
+    skills: ["Python", "JavaScript", "TypeScript", "C++", "C#", "SQL", "Java", "HTML", "CSS", "NoSQL"]
   },
   {
     category: "ML/AI Frameworks",
-    skills: ["PyTorch", "TensorFlow", "Scikit-Learn", "OpenCV", "YOLOv8", "Hugging Face"]
+    skills: ["PyTorch", "TensorFlow", "Scikit-Learn", "OpenCV", "YOLOv11", "Ollama", "N8N", "MCP Server", "Prompt Engineering", "LLM Orchestration", "OCR", "Object Detection", "Image Segmentation"]
   },
   {
     category: "Frontend Development",
-    skills: ["React", "Next.js", "Vite", "Tailwind CSS", "Material UI", "shadcn/ui", "Accessible Technologies (a11y)"]
+    skills: ["React", "Next.js", "Vite", "Tailwind CSS", "Material UI", "shadcn/ui"]
   },
   {
     category: "Backend Development",
-    skills: ["Node.js", "Express", "REST APIs", "Socket.io", "GraphQL", "API Design", "API Development"]
+    skills: ["Node.js", "Express", "REST APIs", "Socket.io", ".NET", "OOP", "API Design", "API Development"]
   },
   {
     category: "Databases",
-    skills: ["PostgreSQL", "MySQL", "MongoDB", "Redis", "Supabase", "Google Cloud Spanner", "Database Design"]
+    skills: ["PostgreSQL", "MySQL", "Microsoft SQL Server", "MongoDB", "Redis", "Vector Database", "Qdrant Vector Database", "Database Design"]
   },
   {
     category: "Cloud & DevOps",
-    skills: ["AWS (EC2, RDS, S3)", "Google Cloud", "Docker", "Nginx", "CI/CD", "Git", "Apache Flume"]
+    skills: ["AWS (EC2, RDS, S3, Lambda, Route53, Cloudwatch)", "Azure", "Google Cloud (APIs, Buckets)", "Docker", "Kubernetes", "Nginx", "Linux", "Grafana", "CI/CD", "Git", "GitHub"]
   },
   {
-    category: "Computer Vision",
-    skills: ["Object Detection", "Image Segmentation", "OCR", "Face Recognition", "Video Processing"]
-  },
-  {
-    category: "Machine Learning",
-    skills: ["Deep Learning", "Neural Networks", "Transfer Learning", "Model Optimization", "Computer Vision"]
+    category: "Tools & Methodologies",
+    skills: ["Agile Methodology", "Jira", "Visual Studio", "Visual Studio Code", "Antigravity", "Copilot", "Claude Code", "Excel"]
   }
 ];
 

@@ -5,6 +5,16 @@ import { ExternalLink } from "lucide-react";
 
 const projects = [
   {
+    title: "Agentic Todo App",
+    description: "Developed an AI-powered task management platform using FastAPI, React, and Model Context Protocol (MCP), enabling natural language task operations through Claude AI integration with 6 custom tool definitions.",
+    tech: ["FastAPI", "React", "MCP", "Docker", "SQLAlchemy", "Pydantic"],
+    highlights: [
+      "Implemented RESTful API endpoints with SQLAlchemy ORM and Pydantic validation, supporting dynamic filtering by completion status and tags, reducing task retrieval time to milliseconds.",
+      "Designed microservices architecture (Docker), featuring stdio-based MCP server as AI bridge layer."
+    ],
+    date: "Jan 2026"
+  },
+  {
     title: "Application Manager",
     description: "Developed a responsive job application management tool that reduced manual tracking time by 60% for 10+ pilot users through automated form entry, centralized records, and instant updates.",
     tech: ["Google Identity Services", "Google Sheets API", "OAuth", "Serverless"],

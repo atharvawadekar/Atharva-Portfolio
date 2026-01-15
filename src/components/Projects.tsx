@@ -15,6 +15,18 @@ const projects = [
     date: "Jan 2026"
   },
   {
+    title: "ExamTimer",
+    description: "Developed a high-performance web application using React and Vite, featuring a responsive split-screen interface for simultaneous timer management and student announcements.",
+    tech: ["React", "Vite", "Netlify"],
+    highlights: [
+      "Engineered an intuitive control system with quick-add functionality (+5/10/15m) for dynamic state management",
+      "Streamlined exam administration, reducing proctor intervention time by ~90% for duration adjustments",
+      "Ensured zero-latency countdown accuracy with a responsive split-screen layout"
+    ],
+    date: "Jan 2026",
+    link: "https://timemyexam.netlify.app/"
+  },
+  {
     title: "Application Manager",
     description: "Developed a responsive job application management tool that reduced manual tracking time by 60% for 10+ pilot users through automated form entry, centralized records, and instant updates.",
     tech: ["Google Identity Services", "Google Sheets API", "OAuth", "Serverless"],

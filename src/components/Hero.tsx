@@ -14,12 +14,12 @@ const Hero = () => {
             Software Developer | Full Stack Engineer | AI/ML Specialist
           </p>
           <p className="text-lg text-primary-foreground/80 mb-8 max-w-2xl mx-auto">
-            Computer Science graduate student specializing in machine learning, deep learning, and computer vision.
-            Building scalable applications and deploying production-ready AI systems.
+            Built and deployed end-to-end systems using React, Node.js, Python, AWS/GCP, and computer vision/LLMs.
+            Delivered real-world products used by live clients, cutting manual effort by 80–90%.
           </p>
           <div className="flex flex-wrap gap-4 justify-center mb-8">
             <Button asChild size="lg" className="bg-card text-card-foreground hover:bg-card/90 shadow-medium">
-              <a href="mailto:wadekar@buffalo.edu">
+              <a href="mailto:atharvawadekar2908@gmail.com">
                 <Mail className="mr-2 h-5 w-5" />
                 Contact Me
               </a>

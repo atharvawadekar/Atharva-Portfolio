@@ -13,7 +13,7 @@ const Contact = () => {
           <Card className="shadow-medium border-border">
             <CardContent className="p-8">
               <p className="text-center text-lg text-card-foreground mb-8">
-                I'm actively seeking entry-level opportunities in Software Development, Full Stack Engineering, 
+                I'm actively seeking entry-level opportunities in Software Development, Full Stack Engineering,
                 AI/ML Engineering, and related roles. Let's connect!
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
@@ -21,8 +21,8 @@ const Contact = () => {
                   <Mail className="h-6 w-6 text-primary flex-shrink-0" />
                   <div>
                     <p className="text-sm text-muted-foreground">Email</p>
-                    <a href="mailto:wadekar@buffalo.edu" className="text-accent-foreground hover:text-primary transition-smooth">
-                      wadekar@buffalo.edu
+                    <a href="mailto:atharvawadekar2908@gmail.com" className="text-accent-foreground hover:text-primary transition-smooth">
+                      atharvawadekar2908@gmail.com
                     </a>
                   </div>
                 </div>
@@ -46,9 +46,9 @@ const Contact = () => {
                   <Github className="h-6 w-6 text-primary flex-shrink-0" />
                   <div>
                     <p className="text-sm text-muted-foreground">GitHub</p>
-                    <a 
-                      href="https://github.com/atharvawadekar" 
-                      target="_blank" 
+                    <a
+                      href="https://github.com/atharvawadekar"
+                      target="_blank"
                       rel="noopener noreferrer"
                       className="text-accent-foreground hover:text-primary transition-smooth"
                     >
@@ -60,13 +60,13 @@ const Contact = () => {
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button size="lg" className="shadow-soft">
                   <Mail className="mr-2 h-5 w-5" />
-                  <a href="mailto:wadekar@buffalo.edu">Send Email</a>
+                  <a href="mailto:atharvawadekar2908@gmail.com">Send Email</a>
                 </Button>
                 <Button size="lg" variant="outline">
                   <Linkedin className="mr-2 h-5 w-5" />
-                  <a 
-                    href="https://www.linkedin.com/in/atharvawadekar2" 
-                    target="_blank" 
+                  <a
+                    href="https://www.linkedin.com/in/atharvawadekar2"
+                    target="_blank"
                     rel="noopener noreferrer"
                   >
                     LinkedIn Profile

@@ -11,24 +11,24 @@ const Footer = () => {
             © {currentYear} Atharva Wadekar. All rights reserved.
           </p>
           <div className="flex gap-4">
-            <a 
-              href="https://github.com/atharvawadekar" 
-              target="_blank" 
+            <a
+              href="https://github.com/atharvawadekar"
+              target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-smooth"
             >
               <Github className="h-5 w-5" />
             </a>
-            <a 
-              href="https://www.linkedin.com/in/atharvawadekar2" 
-              target="_blank" 
+            <a
+              href="https://www.linkedin.com/in/atharvawadekar2"
+              target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-smooth"
             >
               <Linkedin className="h-5 w-5" />
             </a>
-            <a 
-              href="mailto:wadekar@buffalo.edu"
+            <a
+              href="mailto:atharvawadekar2908@gmail.com"
               className="text-muted-foreground hover:text-primary transition-smooth"
             >
               <Mail className="h-5 w-5" />

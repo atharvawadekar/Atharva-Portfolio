@@ -5,6 +5,17 @@ import { ExternalLink } from "lucide-react";
 
 const projects = [
   {
+    title: "Virtual Poker Chips",
+    description: "Architected a real-time multiplayer synchronization engine using Firebase Realtime Database and TypeScript, enabling sub-100ms latency for shared game states across 10+ concurrent users via a serverless architecture.",
+    tech: ["React Native", "Expo", "Firebase", "TypeScript"],
+    highlights: [
+      "Engineered atomic transaction logic with Firebase Security Rules ensuring 100% data integrity without a dedicated backend",
+      "Deployed production-ready Android application using EAS Build CI/CD with gesture-optimized UI",
+      "Achieved sub-100ms latency for shared game states via event-driven architecture"
+    ],
+    date: "Jan 2026"
+  },
+  {
     title: "Agentic Todo App",
     description: "Developed an AI-powered task management platform using FastAPI, React, and Model Context Protocol (MCP), enabling natural language task operations through Claude AI integration with 6 custom tool definitions.",
     tech: ["FastAPI", "React", "MCP", "Docker", "SQLAlchemy", "Pydantic"],
@@ -63,12 +74,12 @@ const projects = [
   },
   {
     title: "Autonomous Ball-Tracking Quadruped Robot",
-    description: "Real-time computer vision pipeline using YOLOv8 for object detection and NanoTrack for continuous tracking on a quadruped robot platform.",
-    tech: ["YOLOv8", "NanoTrack", "ROS", "PID Control", "Python"],
+    description: "Developed the B.O.L.T (Behavioral Object Locomotion & Tracking) system for the Unitree Go2 quadruped, enabling autonomous, real-time vision-guided object following.",
+    tech: ["YOLOv8n", "ONNX", "Jetson Nano", "Python", "Unitree Go2", "FSM"],
     highlights: [
-      "Robust ball detection under varying lighting",
-      "Integrated vision-to-motion control system",
-      "Low-latency ROS-based architecture"
+      "Engineered a quantized YOLOv8n perception pipeline on Jetson Nano, achieving 0.995 mAP@0.5",
+      "Developed FSM control layer to abstract perception noise into stable behaviors (Search, Approach, Hold)",
+      "Achieved 48ms system latency and >90% tracking success rate in indoor environments"
     ],
     date: "Jun 2025"
   },
@@ -83,17 +94,7 @@ const projects = [
     ],
     date: "May 2025"
   },
-  {
-    title: "Vision Transformer for Image Classification",
-    description: "Implemented Vision Transformer architecture for binary image classification on Cats vs Dogs dataset using transfer learning.",
-    tech: ["PyTorch", "ViT", "Transfer Learning"],
-    highlights: [
-      "97.76% validation accuracy",
-      "Processed 24,998 images",
-      "Automated corrupted file detection"
-    ],
-    date: "Apr 2025"
-  },
+
   {
     title: "Multiplayer Rock-Paper-Scissors Game",
     description: "Real-time multiplayer game with WebSocket communication and deployed on production VPS with Nginx.",

@@ -26,7 +26,7 @@ const projects = [
     date: "Jan 2026"
   },
   {
-    title: "ExamTimer",
+    title: "Time My Exam",
     description: "Developed a high-performance web application using React and Vite, featuring a responsive split-screen interface for simultaneous timer management and student announcements.",
     tech: ["React", "Vite", "Netlify"],
     highlights: [

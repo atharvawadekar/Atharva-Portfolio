@@ -24,7 +24,7 @@ const experiences = [
     ]
   },
   {
-    title: "Full Software Developer",
+    title: "Full Stack Software Developer",
     company: "SportZilla",
     location: "Pune, India",
     period: "Oct 2023 - Jul 2024",

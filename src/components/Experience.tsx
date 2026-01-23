@@ -12,17 +12,7 @@ const experiences = [
       "Built a secure Node.js/Express backend and a React/TypeScript dashboard that eliminated CLI-based review and increased archivist throughput by 60% through faster filtering, browsing, and inspection of reel reports."
     ]
   },
-  {
-    title: "Graduate Research Assistant",
-    company: "University at Buffalo",
-    location: "Buffalo, NY",
-    period: "Dec 2024 - Present",
-    description: [
-      "Extended Multi-Vehicle Dial-a-Ride Problem model to heterogeneous vehicle capacities",
-      "Implemented and benchmarked HGR variants in Python with synthetic and real-world datasets",
-      "Supported research workflow with experiment pipelines and LaTeX documentation"
-    ]
-  },
+
   {
     title: "Full Stack Software Developer",
     company: "SportZilla",

@@ -2,6 +2,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ExternalLink } from "lucide-react";
+import { trackEvent } from "@/lib/ga";
 
 const projects = [
   {
@@ -131,7 +132,12 @@ const Projects = () => {
                       className="h-8 w-8 -mr-2 text-muted-foreground hover:text-primary"
                       asChild
                     >
-                      <a href={project.link} target="_blank" rel="noopener noreferrer">
+                      <a
+                        href={project.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        onClick={() => trackEvent('project_link_click', { project_title: project.title, link: project.link })}
+                      >
                         <ExternalLink className="h-4 w-4" />
                       </a>
                     </Button>

@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Mail, Phone, MapPin, Github, Linkedin } from "lucide-react";
+import { trackEvent } from "@/lib/ga";
 
 const Contact = () => {
   return (
@@ -21,7 +22,11 @@ const Contact = () => {
                   <Mail className="h-6 w-6 text-primary flex-shrink-0" />
                   <div>
                     <p className="text-sm text-muted-foreground">Email</p>
-                    <a href="mailto:atharvawadekar2908@gmail.com" className="text-accent-foreground hover:text-primary transition-smooth">
+                    <a
+                      href="mailto:atharvawadekar2908@gmail.com"
+                      className="text-accent-foreground hover:text-primary transition-smooth"
+                      onClick={() => trackEvent('contact_click', { method: 'email' })}
+                    >
                       atharvawadekar2908@gmail.com
                     </a>
                   </div>
@@ -30,7 +35,11 @@ const Contact = () => {
                   <Phone className="h-6 w-6 text-primary flex-shrink-0" />
                   <div>
                     <p className="text-sm text-muted-foreground">Phone</p>
-                    <a href="tel:+17166581112" className="text-accent-foreground hover:text-primary transition-smooth">
+                    <a
+                      href="tel:+17166581112"
+                      className="text-accent-foreground hover:text-primary transition-smooth"
+                      onClick={() => trackEvent('contact_click', { method: 'phone' })}
+                    >
                       +1 (716) 658-1112
                     </a>
                   </div>
@@ -51,6 +60,7 @@ const Contact = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-accent-foreground hover:text-primary transition-smooth"
+                      onClick={() => trackEvent('social_click', { platform: 'github', location: 'contact' })}
                     >
                       @atharvawadekar
                     </a>
@@ -58,17 +68,23 @@ const Contact = () => {
                 </div>
               </div>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button size="lg" className="shadow-soft">
-                  <Mail className="mr-2 h-5 w-5" />
-                  <a href="mailto:atharvawadekar2908@gmail.com">Send Email</a>
+                <Button size="lg" className="shadow-soft" asChild>
+                  <a
+                    href="mailto:atharvawadekar2908@gmail.com"
+                    onClick={() => trackEvent('contact_click', { method: 'email_button' })}
+                  >
+                    <Mail className="mr-2 h-5 w-5" />
+                    Send Email
+                  </a>
                 </Button>
-                <Button size="lg" variant="outline">
-                  <Linkedin className="mr-2 h-5 w-5" />
+                <Button size="lg" variant="outline" asChild>
                   <a
                     href="https://www.linkedin.com/in/atharvawadekar2"
                     target="_blank"
                     rel="noopener noreferrer"
+                    onClick={() => trackEvent('social_click', { platform: 'linkedin', location: 'contact' })}
                   >
+                    <Linkedin className="mr-2 h-5 w-5" />
                     LinkedIn Profile
                   </a>
                 </Button>

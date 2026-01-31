@@ -1,6 +1,7 @@
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 import { Users, MousePointer2, Image as ImageIcon, PlayCircle } from "lucide-react";
+import { trackEvent } from "@/lib/ga";
 
 interface FeaturedStat {
     label: string;
@@ -82,6 +83,8 @@ const Featured = () => {
                                 controls
                                 preload="metadata"
                                 poster={featuredData.posterUrl}
+                                onPlay={() => trackEvent('video_play', { project: featuredData.title })}
+                                onPause={() => trackEvent('video_pause', { project: featuredData.title })}
                             >
                                 <source src={featuredData.videoUrl} type="video/mp4" />
                                 <source src={featuredData.videoUrl} type="video/quicktime" />

@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Mail, Github, Linkedin, FileDown } from "lucide-react";
+import { trackEvent } from "@/lib/ga";
 
 const Hero = () => {
   return (
@@ -20,13 +21,17 @@ const Hero = () => {
             </p>
             <div className="flex flex-wrap gap-4 justify-center md:justify-start mb-8">
               <Button asChild size="lg" className="bg-card text-card-foreground hover:bg-card/90 shadow-medium">
-                <a href="mailto:atharvawadekar2908@gmail.com">
+                <a href="mailto:atharvawadekar2908@gmail.com" onClick={() => trackEvent('hero_contact_click')}>
                   <Mail className="mr-2 h-5 w-5" />
                   Contact Me
                 </a>
               </Button>
               <Button asChild size="lg" className="bg-card text-card-foreground hover:bg-card/90 shadow-medium">
-                <a href="/Atharva-Portfolio/resume.pdf" download="Atharva_Wadekar_Resume.pdf">
+                <a
+                  href="/Atharva-Portfolio/resume.pdf"
+                  download="Atharva_Wadekar_Resume.pdf"
+                  onClick={() => trackEvent('resume_download')}
+                >
                   <FileDown className="mr-2 h-5 w-5" />
                   Resume
                 </a>
@@ -38,6 +43,7 @@ const Hero = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-3 rounded-full bg-primary-foreground/10 hover:bg-primary-foreground/20 transition-smooth"
+                onClick={() => trackEvent('social_click', { platform: 'github' })}
               >
                 <Github className="h-6 w-6 text-primary-foreground" />
               </a>
@@ -46,6 +52,7 @@ const Hero = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-3 rounded-full bg-primary-foreground/10 hover:bg-primary-foreground/20 transition-smooth"
+                onClick={() => trackEvent('social_click', { platform: 'linkedin' })}
               >
                 <Linkedin className="h-6 w-6 text-primary-foreground" />
               </a>

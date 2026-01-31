@@ -11,7 +11,7 @@ interface FeaturedStat {
 const featuredData = {
     title: "Frame Findr",
     subtitle: "AI-Powered Event Photo Search Platform",
-    description: "Most recent event milestone: Streamlined photo retrieval for large-scale events using OCR (Optical Character Recognition).",
+    description: "Most recent event milestone: Reduced photo discovery time for participants of Indreshwar Marathon using OCR (Optical Character Recognition).",
     videoUrl: "/Atharva-Portfolio/assets/videos/frame-findr-demo.mov",
     posterUrl: "/Atharva-Portfolio/assets/images/frame-findr-poster.png",
     stats: [
@@ -27,7 +27,7 @@ const featuredData = {
         },
         {
             label: "Total Users",
-            value: "288",
+            value: "290+",
             icon: <Users className="h-5 w-5 text-emerald-500" />,
         },
     ] as FeaturedStat[],

@@ -14,7 +14,31 @@ interface FeaturedStat {
 
 const featuredEvents = [
     {
-        title: "Frame Findr - Indreshwar Marathon",
+        title: "Frame Findr - Mathias Panaji Run (1st March)",
+        subtitle: "AI-Powered Event Photo Search Platform",
+        description: "Another successful deployment of our OCR and Face Recognition based photo discovery platform, processing thousands of images efficiently.",
+        videoUrl: "/Atharva-Portfolio/assets/videos/frame-findr-march-event.mov",
+        posterUrl: "/Atharva-Portfolio/assets/images/frame-findr-poster.png",
+        stats: [
+            {
+                label: "Images Processed",
+                value: "2000+",
+                icon: <ImageIcon className="h-5 w-5 text-blue-500" />,
+            },
+            {
+                label: "Event Count",
+                value: "2.4K",
+                icon: <MousePointer2 className="h-5 w-5 text-purple-500" />,
+            },
+            {
+                label: "Total Users",
+                value: "306",
+                icon: <Users className="h-5 w-5 text-emerald-500" />,
+            },
+        ] as FeaturedStat[],
+    },
+    {
+        title: "Frame Findr - Indreshwar Marathon (25th Jan)",
         subtitle: "AI-Powered Event Photo Search Platform",
         description: "Reduced photo discovery time for participants of Indreshwar Marathon using OCR (Optical Character Recognition) and Face Recognition.",
         videoUrl: "/Atharva-Portfolio/assets/videos/frame-findr-demo.mov",
@@ -33,30 +57,6 @@ const featuredEvents = [
             {
                 label: "Total Users",
                 value: "290+",
-                icon: <Users className="h-5 w-5 text-emerald-500" />,
-            },
-        ] as FeaturedStat[],
-    },
-    {
-        title: "Frame Findr - March 1st Event",
-        subtitle: "AI-Powered Event Photo Search Platform",
-        description: "Another successful deployment of our OCR photo discovery platform, processing thousands of images efficiently during our March 1st event.",
-        videoUrl: "/Atharva-Portfolio/assets/videos/frame-findr-march-event.mov",
-        posterUrl: "/Atharva-Portfolio/assets/images/frame-findr-poster.png",
-        stats: [
-            {
-                label: "Images Processed",
-                value: "2000+",
-                icon: <ImageIcon className="h-5 w-5 text-blue-500" />,
-            },
-            {
-                label: "Event Count",
-                value: "2.4K",
-                icon: <MousePointer2 className="h-5 w-5 text-purple-500" />,
-            },
-            {
-                label: "Total Users",
-                value: "306",
                 icon: <Users className="h-5 w-5 text-emerald-500" />,
             },
         ] as FeaturedStat[],

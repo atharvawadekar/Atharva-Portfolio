@@ -6,6 +6,17 @@ import { trackEvent } from "@/lib/ga";
 
 const projects = [
   {
+    title: "Voice Bot",
+    description: "Designed an end-to-end streaming voice pipeline that continuously ingests microphone PCM chunks over WebSockets, performs end-of-turn speech recognition with Deepgram Flux, generates responses with an LLM, and streams synthesized speech back to the client in real time.",
+    tech: ["Python", "Flask-SocketIO", "Deepgram Flux", "Deepgram Aura", "OpenAI"],
+    highlights: [
+      "Built a full-duplex streaming pipeline: microphone PCM → WebSocket → Deepgram Flux STT → LLM → Deepgram Aura TTS → client playback, with end-to-end real-time latency.",
+      "Implemented robust barge-in handling by canceling in-flight LLM generation, draining queued TTS segments, clearing TTS buffers, and triggering immediate client playback stop events so interruptions feel natural and avoid overlapping responses."
+    ],
+    date: "March 2026",
+    link: "https://myvoicebot.me/"
+  },
+  {
     title: "Virtual Poker Chips",
     description: "Architected a real-time multiplayer synchronization engine using Firebase Realtime Database and TypeScript, enabling sub-100ms latency for shared game states across 10+ concurrent users via a serverless architecture.",
     tech: ["React Native", "Expo", "Firebase", "TypeScript"],
